@@ -8,9 +8,33 @@ const rules: KarabinerRules[] = [
     description: "Hyper Key (⌃⌥⇧⌘)",
     manipulators: [
       {
-        description: "Caps Lock -> Hyper Key",
+        description: "Escape -> Caps Lock",
+        from: {
+          key_code: "escape",
+        },
+        to: [
+          {
+            key_code: "caps_lock",
+          },
+        ],
+        type: "basic",
+      },
+      {
+        description: "Caps Lock -> escape",
         from: {
           key_code: "caps_lock",
+        },
+        to: [
+          {
+            key_code: "escape",
+          },
+        ],
+        type: "basic",
+      },
+      {
+        description: "right command -> Hyper Key",
+        from: {
+          key_code: "right_command",
           modifiers: {
             optional: ["any"],
           },
@@ -33,28 +57,80 @@ const rules: KarabinerRules[] = [
         ],
         to_if_alone: [
           {
-            key_code: "escape",
+            key_code: "right_command",
           },
         ],
         type: "basic",
       },
-      //      {
-      //        type: "basic",
-      //        description: "Disable CMD + Tab to force Hyper Key usage",
-      //        from: {
-      //          key_code: "tab",
-      //          modifiers: {
-      //            mandatory: ["left_command"],
-      //          },
-      //        },
-      //        to: [
-      //          {
-      //            key_code: "tab",
-      //          },
-      //        ],
-      //      },
     ],
   },
+  {
+    // adding vim keybindings
+    description: "Left ctrl + hjkl to arrow keys Vim",
+    manipulators: [
+      {
+        from: {
+          key_code: "h",
+          modifiers: {
+            mandatory: ["left_control"],
+            optional: ["any"],
+          },
+        },
+        to: [
+          {
+            key_code: "left_arrow",
+          },
+        ],
+        type: "basic",
+      },
+      {
+        from: {
+          key_code: "j",
+          modifiers: {
+            mandatory: ["left_control"],
+            optional: ["any"],
+          },
+        },
+        to: [
+          {
+            key_code: "down_arrow",
+          },
+        ],
+        type: "basic",
+      },
+      {
+        from: {
+          key_code: "k",
+          modifiers: {
+            mandatory: ["left_control"],
+            optional: ["any"],
+          },
+        },
+        to: [
+          {
+            key_code: "up_arrow",
+          },
+        ],
+        type: "basic",
+      },
+      {
+        from: {
+          key_code: "l",
+          modifiers: {
+            mandatory: ["left_control"],
+            optional: ["any"],
+          },
+        },
+        to: [
+          {
+            key_code: "right_arrow",
+          },
+        ],
+        type: "basic",
+      },
+    ],
+  },
+
   ...createHyperSubLayers({
     spacebar: open(
       "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
