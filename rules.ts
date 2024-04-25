@@ -149,13 +149,13 @@ const rules: KarabinerRules[] = [
       1: app("1Password"),
       c: app("Notion Calendar"),
       v: app("Visual Studio Code"),
-      e: app("Superhuman"),
       n: app("Notion"),
-      t: app("Warp"),
+      w: app("Warp"),
       // "M"essages
       m: app("Messages"),
       f: app("Finder"),
-      p: app("Spotify"),
+      s: app("Spotify"),
+      a: app("Arc"),
     },
 
     // s = "System"
@@ -222,39 +222,6 @@ const rules: KarabinerRules[] = [
       // "D"o not disturb toggle
       d: open(`raycast://extensions/yakitrak/do-not-disturb/toggle`),
     },
-    // v = "moVe" which isn't "m" because we want it to be on the left hand
-    // so that hjkl work like they do in vim
-    v: {
-      h: {
-        to: [{ key_code: "left_arrow" }],
-      },
-      j: {
-        to: [{ key_code: "down_arrow" }],
-      },
-      k: {
-        to: [{ key_code: "up_arrow" }],
-      },
-      l: {
-        to: [{ key_code: "right_arrow" }],
-      },
-      // Magicmove via homerow.app
-      m: {
-        to: [{ key_code: "f", modifiers: ["right_control"] }],
-      },
-      // Scroll mode via homerow.app
-      s: {
-        to: [{ key_code: "j", modifiers: ["right_control"] }],
-      },
-      d: {
-        to: [{ key_code: "d", modifiers: ["right_shift", "right_command"] }],
-      },
-      u: {
-        to: [{ key_code: "page_down" }],
-      },
-      i: {
-        to: [{ key_code: "page_up" }],
-      },
-    },
 
     // c = Musi*c* which isn't "m" because we want it to be on the left hand
     c: {
@@ -271,16 +238,11 @@ const rules: KarabinerRules[] = [
 
     // r = "Raycast"
     r: {
-      n: open("raycast://script-commands/d1d5f97ad62a6692d70fc17da0a71157"),
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/create-mxs-is-shortlink"
-      ),
-      e: open(
-        "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
-      ),
-      h: open(
-        "raycast://extensions/raycast/clipboard-history/clipboard-history"
-      ),
+      // "D"do not disturb toggle
+      d: open("raycast://extensions/yakitrak/do-not-disturb/toggle"),
+      // "V"isual Studio Code
+      v: open("raycast://extensions/thomas/visual-studio-code/index"),
+
       1: open(
         "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"
       ),
