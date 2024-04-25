@@ -156,6 +156,7 @@ const rules: KarabinerRules[] = [
       f: app("Finder"),
       s: app("Spotify"),
       a: app("Arc"),
+      r: app("Routine"),
     },
 
     // s = "System"
