@@ -8,18 +8,6 @@ const rules: KarabinerRules[] = [
     description: "Hyper Key (⌃⌥⇧⌘)",
     manipulators: [
       {
-        description: "Escape -> Caps Lock",
-        from: {
-          key_code: "escape",
-        },
-        to: [
-          {
-            key_code: "caps_lock",
-          },
-        ],
-        type: "basic",
-      },
-      {
         description: "Caps Lock -> escape",
         from: {
           key_code: "caps_lock",
