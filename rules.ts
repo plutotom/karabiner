@@ -231,6 +231,8 @@ const rules: KarabinerRules[] = [
       d: open("raycast://extensions/yakitrak/do-not-disturb/toggle"),
       // "V"isual Studio Code
       v: open("raycast://extensions/thomas/visual-studio-code/index"),
+      // "O" for tOdos
+      o: open("raycast://extensions/reboot/hypersonic/index"),
 
       1: open(
         "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"
