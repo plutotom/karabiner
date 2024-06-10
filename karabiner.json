@@ -634,10 +634,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a 'Routine.app'"
+                    "shell_command": "open -a 'Amie.app'"
                   }
                 ],
-                "description": "Open -a 'Routine.app'",
+                "description": "Open -a 'Amie.app'",
                 "type": "basic",
                 "from": {
                   "key_code": "r",
