@@ -19,46 +19,31 @@ const rules: KarabinerRules[] = [
         ],
         type: "basic",
       },
-      // {
-      //   description: "right command -> Hyper Key",
-      //   from: {
-      //     key_code: "right_command",
-      //     modifiers: {
-      //       optional: ["any"],
-      //     },
-      //   },
-      //   to: [
-      //     {
-      //       set_variable: {
-      //         name: "hyper",
-      //         value: 1,
-      //       },
-      //     },
-      //   ],
-      //   to_after_key_up: [
-      //     {
-      //       set_variable: {
-      //         name: "hyper",
-      //         value: 0,
-      //       },
-      //     },
-      //   ],
-      //   to_if_alone: [
-      //     {
-      //       key_code: "right_command",
-      //     },
-      //   ],
-      //   type: "basic",
-      // },
       {
+        description: "right command -> Hyper Key",
         from: {
-          key_code: "caps_lock",
+          key_code: "right_command",
+          // key_code: "caps_lock",
           modifiers: {},
         },
         to: [
           {
-            key_code: "left_shift",
-            modifiers: ["left_command", "left_control", "left_option"],
+            key_code: "left_command",
+            modifiers: ["left_shift", "left_control", "left_option"],
+          },
+          {
+            set_variable: {
+              name: "hyper",
+              value: 1,
+            },
+          },
+        ],
+        to_after_key_up: [
+          {
+            set_variable: {
+              name: "hyper",
+              value: 0,
+            },
           },
         ],
         to_if_alone: [
@@ -66,8 +51,55 @@ const rules: KarabinerRules[] = [
             key_code: "escape",
           },
         ],
+        // from: {
+        //   key_code: "right_command",
+        //   modifiers: {
+        //     optional: ["any"],
+        //   },
+        // },
+        // to: [
+        //   {
+        //     set_variable: {
+        //       name: "hyper",
+        //       value: 1,
+        //     },
+        //   },
+        // ],
+        // to_after_key_up: [
+        //   {
+        //     set_variable: {
+        //       name: "hyper",
+        //       value: 0,
+        //     },
+        //   },
+        // ],
+        // to_if_alone: [
+        //   {
+        //     key_code: "right_command",
+        //   },
+        // ],
         type: "basic",
       },
+      // This is from online
+      // {
+      //   from: {
+      //     key_code: "caps_lock",
+      //     modifiers: {},
+      //   },
+      //   to: [
+      //     {
+      //       key_code: "left_shift",
+      //       modifiers: ["left_command", "left_control", "left_option"],
+      //     },
+      //   ],
+      //   to_if_alone: [
+      //     {
+      //       key_code: "escape",
+      //     },
+      //   ],
+      //   type: "basic",
+      // },
+      // end online example
     ],
   },
 
