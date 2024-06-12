@@ -34,18 +34,12 @@
                 },
                 "to": [
                   {
-                    "set_variable": {
-                      "name": "hyper",
-                      "value": 1
-                    }
-                  }
-                ],
-                "to_after_key_up": [
-                  {
-                    "set_variable": {
-                      "name": "hyper",
-                      "value": 0
-                    }
+                    "key_code": "left_control",
+                    "modifiers": [
+                      "left_option",
+                      "left_shift",
+                      "left_command"
+                    ]
                   }
                 ],
                 "to_if_alone": [

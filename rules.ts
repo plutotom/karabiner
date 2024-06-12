@@ -1,6 +1,6 @@
 import fs from "fs";
 import { KarabinerRules } from "./types";
-import { createHyperSubLayers, app, open, rectangle } from "./utils";
+import { app, createHyperSubLayers, open } from "./utils";
 
 const rules: KarabinerRules[] = [
   // Define the Hyper key itself
@@ -29,19 +29,23 @@ const rules: KarabinerRules[] = [
         },
         to: [
           {
-            set_variable: {
-              name: "hyper",
-              value: 1,
-            },
+            key_code: "left_control",
+            modifiers: ["left_option", "left_shift", "left_command"],
           },
-        ],
-        to_after_key_up: [
-          {
-            set_variable: {
-              name: "hyper",
-              value: 0,
-            },
-          },
+          //   {
+          //     set_variable: {
+          //       name: "hyper",
+          //       value: 1,
+          //     },
+          //   },
+          // ],
+          // to_after_key_up: [
+          //   {
+          //     set_variable: {
+          //       name: "hyper",
+          //       value: 0,
+          //     },
+          //   },
         ],
         to_if_alone: [
           {
