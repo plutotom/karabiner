@@ -19,43 +19,58 @@ const rules: KarabinerRules[] = [
         ],
         type: "basic",
       },
+      // {
+      //   description: "right command -> Hyper Key",
+      //   from: {
+      //     key_code: "right_command",
+      //     modifiers: {
+      //       optional: ["any"],
+      //     },
+      //   },
+      //   to: [
+      //     {
+      //       set_variable: {
+      //         name: "hyper",
+      //         value: 1,
+      //       },
+      //     },
+      //   ],
+      //   to_after_key_up: [
+      //     {
+      //       set_variable: {
+      //         name: "hyper",
+      //         value: 0,
+      //       },
+      //     },
+      //   ],
+      //   to_if_alone: [
+      //     {
+      //       key_code: "right_command",
+      //     },
+      //   ],
+      //   type: "basic",
+      // },
       {
-        description: "right command -> Hyper Key",
         from: {
-          key_code: "right_command",
-          modifiers: {
-            optional: ["any"],
-          },
+          key_code: "caps_lock",
+          modifiers: {},
         },
         to: [
           {
-            key_code: "left_control",
-            modifiers: ["left_option", "left_shift", "left_command"],
+            key_code: "left_shift",
+            modifiers: ["left_command", "left_control", "left_option"],
           },
-          //   {
-          //     set_variable: {
-          //       name: "hyper",
-          //       value: 1,
-          //     },
-          //   },
-          // ],
-          // to_after_key_up: [
-          //   {
-          //     set_variable: {
-          //       name: "hyper",
-          //       value: 0,
-          //     },
-          //   },
         ],
         to_if_alone: [
           {
-            key_code: "right_command",
+            key_code: "escape",
           },
         ],
         type: "basic",
       },
     ],
   },
+
   {
     // adding vim keybindings
     description: "Left ctrl + hjkl to arrow keys Vim",
