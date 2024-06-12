@@ -236,13 +236,15 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      p: {
-        to: [
-          {
-            key_code: "play_or_pause",
-          },
-        ],
-      },
+      p: open("raycast://extensions/thomas/spotify-controls/playPause"),
+      // {
+      // to: [
+      //   {
+      //     key_code: "play_or_pause",
+
+      //   },
+      // ],
+      // },
       semicolon: {
         to: [
           {

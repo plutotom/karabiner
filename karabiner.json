@@ -846,9 +846,10 @@
               {
                 "to": [
                   {
-                    "key_code": "play_or_pause"
+                    "shell_command": "open raycast://extensions/thomas/spotify-controls/playPause"
                   }
                 ],
+                "description": "Open raycast://extensions/thomas/spotify-controls/playPause",
                 "type": "basic",
                 "from": {
                   "key_code": "p",
