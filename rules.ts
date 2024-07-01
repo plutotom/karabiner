@@ -7,23 +7,23 @@ const rules: KarabinerRules[] = [
   {
     description: "Hyper Key (⌃⌥⇧⌘)",
     manipulators: [
-      {
-        description: "Caps Lock -> escape",
-        from: {
-          key_code: "caps_lock",
-        },
-        to: [
-          {
-            key_code: "escape",
-          },
-        ],
-        type: "basic",
-      },
+      // {
+      //   description: "Caps Lock -> escape",
+      //   from: {
+      //     key_code: "caps_lock",
+      //   },
+      //   to: [
+      //     {
+      //       key_code: "escape",
+      //     },
+      //   ],
+      //   type: "basic",
+      // },
       {
         description: "right command -> Hyper Key",
         from: {
-          key_code: "right_command",
-          // key_code: "caps_lock",
+          // key_code: "right_command",
+          key_code: "caps_lock",
           modifiers: {},
         },
         to: [
@@ -80,26 +80,39 @@ const rules: KarabinerRules[] = [
         // ],
         type: "basic",
       },
-      // This is from online
-      // {
-      //   from: {
-      //     key_code: "caps_lock",
-      //     modifiers: {},
-      //   },
-      //   to: [
-      //     {
-      //       key_code: "left_shift",
-      //       modifiers: ["left_command", "left_control", "left_option"],
-      //     },
-      //   ],
-      //   to_if_alone: [
-      //     {
-      //       key_code: "escape",
-      //     },
-      //   ],
-      //   type: "basic",
-      // },
-      // end online example
+      {
+        description: "right command -> Hyper Key",
+        from: {
+          key_code: "right_command",
+          modifiers: {},
+        },
+        to: [
+          {
+            key_code: "left_command",
+            modifiers: ["left_shift", "left_control", "left_option"],
+          },
+          {
+            set_variable: {
+              name: "hyper",
+              value: 1,
+            },
+          },
+        ],
+        to_after_key_up: [
+          {
+            set_variable: {
+              name: "hyper",
+              value: 0,
+            },
+          },
+        ],
+        to_if_alone: [
+          {
+            key_code: "escape",
+          },
+        ],
+        type: "basic",
+      },
     ],
   },
 
