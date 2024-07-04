@@ -13,43 +13,6 @@
               {
                 "description": "right command -> Hyper Key",
                 "from": {
-                  "key_code": "caps_lock",
-                  "modifiers": {}
-                },
-                "to": [
-                  {
-                    "key_code": "left_command",
-                    "modifiers": [
-                      "left_shift",
-                      "left_control",
-                      "left_option"
-                    ]
-                  },
-                  {
-                    "set_variable": {
-                      "name": "hyper",
-                      "value": 1
-                    }
-                  }
-                ],
-                "to_after_key_up": [
-                  {
-                    "set_variable": {
-                      "name": "hyper",
-                      "value": 0
-                    }
-                  }
-                ],
-                "to_if_alone": [
-                  {
-                    "key_code": "escape"
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "description": "right command -> Hyper Key",
-                "from": {
                   "key_code": "right_command",
                   "modifiers": {}
                 },
