@@ -3,6 +3,31 @@ import { KarabinerRules } from "./types";
 import { app, createHyperSubLayers, open } from "./utils";
 
 const rules: KarabinerRules[] = [
+  {
+    // make escape key work as caps lock
+    description: "Escape to Caps Lock",
+    manipulators: [
+      {
+        from: {
+          key_code: "caps_lock",
+          modifiers: {
+            // optional: ["caps_lock"],
+          },
+        },
+        to: [
+          {
+            key_code: "escape",
+          },
+        ],
+        // to_if_alone: [
+        //   {
+        //     key_code: "escape",
+        //   },
+        // ],
+        type: "basic",
+      },
+    ],
+  },
   // Define the Hyper key itself
   {
     description: "Hyper Key (⌃⌥⇧⌘)",
@@ -42,7 +67,6 @@ const rules: KarabinerRules[] = [
       },
     ],
   },
-
   {
     // adding vim keybindings
     description: "Left ctrl + hjkl to arrow keys Vim",
