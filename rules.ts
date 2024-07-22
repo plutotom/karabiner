@@ -165,6 +165,9 @@ const rules: KarabinerRules[] = [
 
     // s = "System"
     s: {
+      // "F"inder
+      f: app("Finder"),
+
       u: {
         to: [
           {
