@@ -152,7 +152,7 @@ const rules: KarabinerRules[] = [
       1: app("1Password"),
       c: app("Notion Calendar"),
       g: app("ChatGPT"),
-      v: app("Visual Studio Code"),
+      v: app("Cursor"),
       n: app("Notion"),
       w: app("Warp"),
       // "M"essages
