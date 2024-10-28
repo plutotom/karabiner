@@ -756,10 +756,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a 'Finder.app'"
+                    "shell_command": "open raycast://extensions/raycast/file-search/search-files"
                   }
                 ],
-                "description": "Open -a 'Finder.app'",
+                "description": "Open raycast://extensions/raycast/file-search/search-files",
                 "type": "basic",
                 "from": {
                   "key_code": "f",
