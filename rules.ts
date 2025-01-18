@@ -168,7 +168,7 @@ const rules: KarabinerRules[] = [
       // "F"inder
       // f: app("Finder"),
       // Search Finder
-      f: open("raycast://extensions/raycast/file-search/search-files"),
+      // f: open("raycast://extensions/raycast/file-search/search-files"),
       u: {
         to: [
           {
