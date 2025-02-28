@@ -138,6 +138,7 @@ const rules: KarabinerRules[] = [
     spacebar: open(
       "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
     ),
+    a: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
     // b = "B"rowse
     b: {
       t: open("https://twitter.com"),
