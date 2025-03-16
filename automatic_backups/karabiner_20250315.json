@@ -177,6 +177,35 @@
             ]
           },
           {
+            "description": "Hyper Key + a",
+            "manipulators": [
+              {
+                "to": [
+                  {
+                    "shell_command": "open raycast://extensions/raycast/raycast-ai/ai-chat"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/raycast-ai/ai-chat",
+                "type": "basic",
+                "from": {
+                  "key_code": "a",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "description": "Hyper Key sublayer \"b\"",
             "manipulators": [
               {
@@ -210,6 +239,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_a",
                     "value": 0
                   },
                   {
@@ -395,6 +429,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_a",
                     "value": 0
                   },
                   {
@@ -728,6 +767,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_a",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_b",
                     "value": 0
                   },
@@ -749,30 +793,6 @@
                   {
                     "type": "variable_if",
                     "name": "hyper",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open raycast://extensions/raycast/file-search/search-files"
-                  }
-                ],
-                "description": "Open raycast://extensions/raycast/file-search/search-files",
-                "type": "basic",
-                "from": {
-                  "key_code": "f",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_s",
                     "value": 1
                   }
                 ]
@@ -1034,6 +1054,11 @@
                   },
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_a",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
                     "name": "hyper_sublayer_b",
                     "value": 0
                   },
@@ -1164,6 +1189,11 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_spacebar",
+                    "value": 0
+                  },
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_a",
                     "value": 0
                   },
                   {
