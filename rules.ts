@@ -10,20 +10,13 @@ const rules: KarabinerRules[] = [
       {
         from: {
           key_code: "caps_lock",
-          modifiers: {
-            // optional: ["caps_lock"],
-          },
+          modifiers: {},
         },
         to: [
           {
             key_code: "escape",
           },
         ],
-        // to_if_alone: [
-        //   {
-        //     key_code: "escape",
-        //   },
-        // ],
         type: "basic",
       },
     ],
@@ -41,7 +34,12 @@ const rules: KarabinerRules[] = [
         to: [
           {
             key_code: "left_command",
-            modifiers: ["left_shift", "left_control", "left_option"],
+            modifiers: [
+              "left_shift",
+              "left_control",
+              "left_option",
+              "left_command",
+            ],
           },
           {
             set_variable: {
@@ -56,11 +54,6 @@ const rules: KarabinerRules[] = [
               name: "hyper",
               value: 0,
             },
-          },
-        ],
-        to_if_alone: [
-          {
-            key_code: "escape",
           },
         ],
         type: "basic",
@@ -135,13 +128,8 @@ const rules: KarabinerRules[] = [
   },
 
   ...createHyperSubLayers({
-    spacebar: open(
-      "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
-    ),
-    a: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
     // b = "B"rowse
     b: {
-      t: open("https://twitter.com"),
       // Quarterly "P"lan
       p: open("https://qrtr.ly/plan"),
       y: open("https://news.ycombinator.com"),
@@ -161,7 +149,6 @@ const rules: KarabinerRules[] = [
       f: app("Finder"),
       s: app("Spotify"),
       a: app("Arc"),
-      r: app("Amie"),
     },
 
     // s = "System"
@@ -169,7 +156,7 @@ const rules: KarabinerRules[] = [
       // "F"inder
       // f: app("Finder"),
       // Search Finder
-      // f: open("raycast://extensions/raycast/file-search/search-files"),
+      f: open("raycast://extensions/raycast/file-search/search-files"),
       u: {
         to: [
           {
@@ -206,15 +193,14 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      p: open("raycast://extensions/thomas/spotify-controls/playPause"),
-      // {
-      // to: [
-      //   {
-      //     key_code: "play_or_pause",
-
-      //   },
-      // ],
-      // },
+      // p: open("raycast://extensions/thomas/spotify-controls/playPause"),
+      p: {
+        to: [
+          {
+            key_code: "play_or_pause",
+          },
+        ],
+      },
       semicolon: {
         to: [
           {
@@ -254,8 +240,6 @@ const rules: KarabinerRules[] = [
       d: open("raycast://extensions/yakitrak/do-not-disturb/toggle"),
       // "V"isual Studio Code
       v: open("raycast://extensions/thomas/visual-studio-code/index"),
-      // "O" for tOdos
-      o: open("raycast://extensions/reboot/hypersonic/index"),
 
       1: open(
         "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"

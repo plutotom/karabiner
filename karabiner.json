@@ -29,7 +29,7 @@
                                 "to": [
                                     {
                                         "key_code": "left_command",
-                                        "modifiers": ["left_shift", "left_control", "left_option"]
+                                        "modifiers": ["left_shift", "left_control", "left_option", "left_command"]
                                     },
                                     {
                                         "set_variable": {
@@ -46,7 +46,6 @@
                                         }
                                     }
                                 ],
-                                "to_if_alone": [{ "key_code": "escape" }],
                                 "type": "basic"
                             }
                         ]
@@ -101,62 +100,10 @@
                         ]
                     },
                     {
-                        "description": "Hyper Key + spacebar",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "Open raycast://extensions/stellate/mxstbr-commands/create-notion-todo",
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open raycast://extensions/stellate/mxstbr-commands/create-notion-todo" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Hyper Key + a",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "Open raycast://extensions/raycast/raycast-ai/ai-chat",
-                                "from": {
-                                    "key_code": "a",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open raycast://extensions/raycast/raycast-ai/ai-chat" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Hyper Key sublayer \"b\"",
                         "manipulators": [
                             {
                                 "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_spacebar",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
-                                    {
-                                        "name": "hyper_sublayer_a",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
                                     {
                                         "name": "hyper_sublayer_o",
                                         "type": "variable_if",
@@ -204,22 +151,6 @@
                                         }
                                     }
                                 ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_b",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "Open https://twitter.com",
-                                "from": {
-                                    "key_code": "t",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open https://twitter.com" }],
                                 "type": "basic"
                             },
                             {
@@ -293,16 +224,6 @@
                         "manipulators": [
                             {
                                 "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_spacebar",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
-                                    {
-                                        "name": "hyper_sublayer_a",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
                                     {
                                         "name": "hyper_sublayer_b",
                                         "type": "variable_if",
@@ -511,22 +432,6 @@
                                 },
                                 "to": [{ "shell_command": "open -a 'Arc.app'" }],
                                 "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_o",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "Open -a 'Amie.app'",
-                                "from": {
-                                    "key_code": "r",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Amie.app'" }],
-                                "type": "basic"
                             }
                         ]
                     },
@@ -535,16 +440,6 @@
                         "manipulators": [
                             {
                                 "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_spacebar",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
-                                    {
-                                        "name": "hyper_sublayer_a",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
                                     {
                                         "name": "hyper_sublayer_b",
                                         "type": "variable_if",
@@ -592,6 +487,22 @@
                                         }
                                     }
                                 ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_s",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open raycast://extensions/raycast/file-search/search-files",
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open raycast://extensions/raycast/file-search/search-files" }],
                                 "type": "basic"
                             },
                             {
@@ -682,12 +593,11 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open raycast://extensions/thomas/spotify-controls/playPause",
                                 "from": {
                                     "key_code": "p",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "shell_command": "open raycast://extensions/thomas/spotify-controls/playPause" }],
+                                "to": [{ "key_code": "play_or_pause" }],
                                 "type": "basic"
                             },
                             {
@@ -748,16 +658,6 @@
                         "manipulators": [
                             {
                                 "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_spacebar",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
-                                    {
-                                        "name": "hyper_sublayer_a",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
                                     {
                                         "name": "hyper_sublayer_b",
                                         "type": "variable_if",
@@ -859,16 +759,6 @@
                         "manipulators": [
                             {
                                 "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_spacebar",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
-                                    {
-                                        "name": "hyper_sublayer_a",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    },
                                     {
                                         "name": "hyper_sublayer_b",
                                         "type": "variable_if",
@@ -980,22 +870,6 @@
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "shell_command": "open raycast://extensions/thomas/visual-studio-code/index" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_r",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "Open raycast://extensions/reboot/hypersonic/index",
-                                "from": {
-                                    "key_code": "o",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open raycast://extensions/reboot/hypersonic/index" }],
                                 "type": "basic"
                             }
                         ]
