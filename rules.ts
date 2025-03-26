@@ -29,16 +29,17 @@ const rules: KarabinerRules[] = [
         description: "right command -> Hyper Key",
         from: {
           key_code: "right_command",
-          modifiers: {},
+          modifiers: { optional: ["any"] },
         },
         to: [
           {
-            key_code: "left_command",
+            key_code: "left_shift",
             modifiers: [
-              "left_shift",
               "left_control",
               "left_option",
               "left_command",
+              "left_shift",
+              "any",
             ],
           },
           {
@@ -127,6 +128,34 @@ const rules: KarabinerRules[] = [
     ],
   },
 
+  {
+    description: "Hyper Key + a",
+    manipulators: [
+      {
+        to: [
+          {
+            shell_command:
+              "open raycast://extensions/raycast/raycast-ai/ai-chat",
+          },
+        ],
+        description: "Open raycast://extensions/raycast/raycast-ai/ai-chat",
+        type: "basic",
+        from: {
+          key_code: "a",
+          modifiers: {
+            optional: ["any"],
+          },
+        },
+        conditions: [
+          {
+            type: "variable_if",
+            name: "hyper",
+            value: 1,
+          },
+        ],
+      },
+    ],
+  },
   ...createHyperSubLayers({
     // b = "B"rowse
     b: {
