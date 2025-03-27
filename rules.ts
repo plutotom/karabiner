@@ -383,6 +383,7 @@ const rules: KarabinerRules[] = [
       2: open(
         "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2"
       ),
+      n: open("raycast://extensions/raycast/raycast-notes/raycast-notes"),
     },
   }),
   {
