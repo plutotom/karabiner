@@ -176,6 +176,8 @@ const rules: KarabinerRules[] = [
       w: app("Warp"),
       // "M"essages
       m: app("Messages"),
+      // O"B"sidian
+      b: app("Obsidian"),
       f: app("Finder"),
       // "i"Message
       i: app("Texts"),
