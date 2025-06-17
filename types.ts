@@ -8,10 +8,30 @@ export interface Manipulator {
   type: "basic";
   from: From;
   to?: To[];
+  to_if_held_down?: ToIfHeldDown[];
   to_after_key_up?: To[];
-  to_if_alone?: To[];
+  to_if_canceled?: ToIfCanceled[];
+  to_if_alone?: ToIfAlone[];
   parameters?: Parameters;
   conditions?: Conditions[];
+  to_delayed_action?: ToDelayedAction;
+}
+
+export interface ToIfCanceled extends To {
+  halt?: boolean;
+}
+
+export interface ToDelayedAction {
+  to_if_canceled?: ToIfCanceled[];
+  to_if_invoked?: To[];
+}
+
+export interface ToIfAlone extends To {
+  halt?: boolean;
+}
+
+export interface ToIfHeldDown extends To {
+  halt?: boolean;
 }
 
 export interface Parameters {
