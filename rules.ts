@@ -1,6 +1,6 @@
 import fs from "fs";
 import { KarabinerRules } from "./types";
-import { app, createHyperSubLayers, open, shell } from "./utils";
+import { createHyperSubLayers, app, open, window, shell } from "./utils";
 
 const rules: KarabinerRules[] = [
   {
@@ -157,7 +157,7 @@ const rules: KarabinerRules[] = [
       ),
     },
 
-    // w = "Window" via rectangle.app
+    // w = "Window"
     w: {
       semicolon: {
         description: "Window: Hide",
@@ -168,6 +168,13 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
+      y: window("previous-display"),
+      o: window("next-display"),
+      k: window("top-half"),
+      j: window("bottom-half"),
+      h: window("left-half"),
+      l: window("right-half"),
+      f: window("maximize"),
       u: {
         description: "Window: Previous Tab",
         to: [
