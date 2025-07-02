@@ -2349,6 +2349,11 @@
                 ]
             },
             "name": "Default",
+            "selected": true,
+            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+        },
+        {
+            "name": "Lilly58v1",
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
     ]
