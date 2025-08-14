@@ -1533,6 +1533,8 @@ const rules: KarabinerRules[] = [
       d: open("raycast://extensions/yakitrak/do-not-disturb/toggle"),
       // "V"isual Studio Code
       v: open("raycast://extensions/thomas/visual-studio-code/index"),
+      // "S"pelling
+      s: open("raycast://ai-commands/fix-spelling-and-grammar"),
 
       1: open(
         "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"

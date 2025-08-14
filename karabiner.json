@@ -2320,6 +2320,22 @@
                                         "value": 1
                                     }
                                 ],
+                                "description": "Open raycast://ai-commands/fix-spelling-and-grammar",
+                                "from": {
+                                    "key_code": "s",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open raycast://ai-commands/fix-spelling-and-grammar" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_r",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
                                 "description": "Open raycast://extensions/raycast/raycast-notes/raycast-notes",
                                 "from": {
                                     "key_code": "n",
