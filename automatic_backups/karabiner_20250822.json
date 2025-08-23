@@ -8,6 +8,1228 @@
       "complex_modifications": {
         "rules": [
           {
+            "description": "Home row mods - ctrl, opt, shift, command",
+            "manipulators": [
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "a"
+                    },
+                    {
+                      "key_code": "s"
+                    },
+                    {
+                      "key_code": "d"
+                    },
+                    {
+                      "key_code": "f"
+                    }
+                  ]
+                },
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": [
+                      "left_command",
+                      "left_option",
+                      "left_control"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "a"
+                    },
+                    {
+                      "key_code": "s"
+                    },
+                    {
+                      "key_code": "d"
+                    }
+                  ]
+                },
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_control",
+                    "modifiers": [
+                      "left_option",
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "a"
+                    },
+                    {
+                      "key_code": "d"
+                    },
+                    {
+                      "key_code": "f"
+                    }
+                  ]
+                },
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": [
+                      "left_command",
+                      "left_control"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "s"
+                    },
+                    {
+                      "key_code": "d"
+                    },
+                    {
+                      "key_code": "f"
+                    }
+                  ]
+                },
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_option",
+                    "modifiers": [
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "a"
+                    },
+                    {
+                      "key_code": "s"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "a"
+                  },
+                  {
+                    "key_code": "s"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_control",
+                    "modifiers": [
+                      "left_option"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "s"
+                    },
+                    {
+                      "key_code": "a"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "s"
+                  },
+                  {
+                    "key_code": "a"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_control",
+                    "modifiers": [
+                      "left_option"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "a"
+                    },
+                    {
+                      "key_code": "d"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "a"
+                  },
+                  {
+                    "key_code": "d"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_control",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "d"
+                    },
+                    {
+                      "key_code": "a"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "d"
+                  },
+                  {
+                    "key_code": "a"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_control",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "a"
+                    },
+                    {
+                      "key_code": "f"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "a"
+                  },
+                  {
+                    "key_code": "f"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_control",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "f"
+                    },
+                    {
+                      "key_code": "a"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "f"
+                  },
+                  {
+                    "key_code": "a"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_control",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "s"
+                    },
+                    {
+                      "key_code": "d"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "s"
+                  },
+                  {
+                    "key_code": "d"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_option",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "d"
+                    },
+                    {
+                      "key_code": "s"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "d"
+                  },
+                  {
+                    "key_code": "s"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_option",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "s"
+                    },
+                    {
+                      "key_code": "f"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "s"
+                  },
+                  {
+                    "key_code": "f"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_option",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "f"
+                    },
+                    {
+                      "key_code": "s"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "f"
+                  },
+                  {
+                    "key_code": "s"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_option",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "d"
+                    },
+                    {
+                      "key_code": "f"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "d"
+                  },
+                  {
+                    "key_code": "f"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_command",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "f"
+                    },
+                    {
+                      "key_code": "d"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "f"
+                  },
+                  {
+                    "key_code": "d"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "left_command",
+                    "modifiers": [
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "a"
+                },
+                "to_delayed_action": {
+                  "to_if_canceled": [
+                    {
+                      "key_code": "a"
+                    }
+                  ],
+                  "to_if_invoked": [
+                    {
+                      "key_code": "vk_none"
+                    }
+                  ]
+                },
+                "to_if_alone": [
+                  {
+                    "halt": true,
+                    "key_code": "a"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "halt": true,
+                    "key_code": "left_control"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "s"
+                },
+                "to_delayed_action": {
+                  "to_if_canceled": [
+                    {
+                      "key_code": "s"
+                    }
+                  ],
+                  "to_if_invoked": [
+                    {
+                      "key_code": "vk_none"
+                    }
+                  ]
+                },
+                "to_if_alone": [
+                  {
+                    "halt": true,
+                    "key_code": "s"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "halt": true,
+                    "key_code": "left_option"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "d"
+                },
+                "to_delayed_action": {
+                  "to_if_canceled": [
+                    {
+                      "key_code": "d"
+                    }
+                  ],
+                  "to_if_invoked": [
+                    {
+                      "key_code": "vk_none"
+                    }
+                  ]
+                },
+                "to_if_alone": [
+                  {
+                    "halt": true,
+                    "key_code": "d"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "halt": true,
+                    "key_code": "left_shift"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "f"
+                },
+                "to_delayed_action": {
+                  "to_if_canceled": [
+                    {
+                      "halt": true,
+                      "key_code": "f"
+                    }
+                  ],
+                  "to_if_invoked": [
+                    {
+                      "key_code": "vk_none"
+                    }
+                  ]
+                },
+                "to_if_alone": [
+                  {
+                    "halt": true,
+                    "key_code": "f"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "halt": true,
+                    "key_code": "left_command"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "j"
+                    },
+                    {
+                      "key_code": "k"
+                    },
+                    {
+                      "key_code": "l"
+                    },
+                    {
+                      "key_code": "semicolon"
+                    }
+                  ]
+                },
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_shift",
+                    "modifiers": [
+                      "right_command",
+                      "right_option",
+                      "right_control"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "semicolon"
+                    },
+                    {
+                      "key_code": "l"
+                    },
+                    {
+                      "key_code": "k"
+                    }
+                  ]
+                },
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_shift",
+                    "modifiers": [
+                      "right_option",
+                      "right_control"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "semicolon"
+                    },
+                    {
+                      "key_code": "k"
+                    },
+                    {
+                      "key_code": "j"
+                    }
+                  ]
+                },
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_shift",
+                    "modifiers": [
+                      "right_command",
+                      "right_option"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "l"
+                    },
+                    {
+                      "key_code": "k"
+                    },
+                    {
+                      "key_code": "j"
+                    }
+                  ]
+                },
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_control",
+                    "modifiers": [
+                      "right_command",
+                      "right_option"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "semicolon"
+                    },
+                    {
+                      "key_code": "l"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "semicolon"
+                  },
+                  {
+                    "key_code": "l"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_control",
+                    "modifiers": [
+                      "right_option"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "l"
+                    },
+                    {
+                      "key_code": "semicolon"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "l"
+                  },
+                  {
+                    "key_code": "semicolon"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_control",
+                    "modifiers": [
+                      "right_option"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "semicolon"
+                    },
+                    {
+                      "key_code": "k"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "semicolon"
+                  },
+                  {
+                    "key_code": "k"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_control",
+                    "modifiers": [
+                      "right_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "k"
+                    },
+                    {
+                      "key_code": "semicolon"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "k"
+                  },
+                  {
+                    "key_code": "semicolon"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_control",
+                    "modifiers": [
+                      "right_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "semicolon"
+                    },
+                    {
+                      "key_code": "j"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "semicolon"
+                  },
+                  {
+                    "key_code": "j"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_control",
+                    "modifiers": [
+                      "right_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "j"
+                    },
+                    {
+                      "key_code": "semicolon"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "j"
+                  },
+                  {
+                    "key_code": "semicolon"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_control",
+                    "modifiers": [
+                      "right_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "l"
+                    },
+                    {
+                      "key_code": "k"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "l"
+                  },
+                  {
+                    "key_code": "k"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_option",
+                    "modifiers": [
+                      "right_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "k"
+                    },
+                    {
+                      "key_code": "l"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "k"
+                  },
+                  {
+                    "key_code": "l"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_option",
+                    "modifiers": [
+                      "right_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "l"
+                    },
+                    {
+                      "key_code": "j"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "l"
+                  },
+                  {
+                    "key_code": "j"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_option",
+                    "modifiers": [
+                      "right_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "j"
+                    },
+                    {
+                      "key_code": "l"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "j"
+                  },
+                  {
+                    "key_code": "l"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_option",
+                    "modifiers": [
+                      "right_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "k"
+                    },
+                    {
+                      "key_code": "j"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "k"
+                  },
+                  {
+                    "key_code": "j"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_command",
+                    "modifiers": [
+                      "right_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "j"
+                    },
+                    {
+                      "key_code": "k"
+                    }
+                  ],
+                  "simultaneous_options": {
+                    "key_down_order": "strict"
+                  }
+                },
+                "to_if_alone": [
+                  {
+                    "key_code": "j"
+                  },
+                  {
+                    "key_code": "k"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "key_code": "right_command",
+                    "modifiers": [
+                      "right_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "semicolon"
+                },
+                "to_delayed_action": {
+                  "to_if_canceled": [
+                    {
+                      "key_code": "semicolon"
+                    }
+                  ],
+                  "to_if_invoked": [
+                    {
+                      "key_code": "vk_none"
+                    }
+                  ]
+                },
+                "to_if_alone": [
+                  {
+                    "halt": true,
+                    "key_code": "semicolon"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "halt": true,
+                    "key_code": "right_control"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "l"
+                },
+                "to_delayed_action": {
+                  "to_if_canceled": [
+                    {
+                      "key_code": "l"
+                    }
+                  ],
+                  "to_if_invoked": [
+                    {
+                      "key_code": "vk_none"
+                    }
+                  ]
+                },
+                "to_if_alone": [
+                  {
+                    "halt": true,
+                    "key_code": "l"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "halt": true,
+                    "key_code": "right_option"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "k"
+                },
+                "to_delayed_action": {
+                  "to_if_canceled": [
+                    {
+                      "key_code": "k"
+                    }
+                  ],
+                  "to_if_invoked": [
+                    {
+                      "key_code": "vk_none"
+                    }
+                  ]
+                },
+                "to_if_alone": [
+                  {
+                    "halt": true,
+                    "key_code": "k"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "halt": true,
+                    "key_code": "right_shift"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "j"
+                },
+                "to_delayed_action": {
+                  "to_if_canceled": [
+                    {
+                      "key_code": "j"
+                    }
+                  ],
+                  "to_if_invoked": [
+                    {
+                      "key_code": "vk_none"
+                    }
+                  ]
+                },
+                "to_if_alone": [
+                  {
+                    "halt": true,
+                    "key_code": "j"
+                  }
+                ],
+                "to_if_held_down": [
+                  {
+                    "halt": true,
+                    "key_code": "right_command"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Escape to Caps Lock",
             "manipulators": [
               {
@@ -31,16 +1253,21 @@
                 "description": "right command -> Hyper Key",
                 "from": {
                   "key_code": "right_command",
-                  "modifiers": {}
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
                 },
                 "to": [
                   {
-                    "key_code": "left_command",
+                    "key_code": "left_shift",
                     "modifiers": [
-                      "left_shift",
                       "left_control",
                       "left_option",
-                      "left_command"
+                      "left_command",
+                      "left_shift",
+                      "any"
                     ]
                   },
                   {
@@ -140,6 +1367,35 @@
                   }
                 ],
                 "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Hyper Key + a",
+            "manipulators": [
+              {
+                "to": [
+                  {
+                    "shell_command": "open raycast://extensions/raycast/raycast-ai/ai-chat"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/raycast-ai/ai-chat",
+                "type": "basic",
+                "from": {
+                  "key_code": "a",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper",
+                    "value": 1
+                  }
+                ]
               }
             ]
           },
@@ -572,6 +1828,30 @@
               {
                 "to": [
                   {
+                    "shell_command": "open -a 'Obsidian.app'"
+                  }
+                ],
+                "description": "Open -a 'Obsidian.app'",
+                "type": "basic",
+                "from": {
+                  "key_code": "b",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_o",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
                     "shell_command": "open -a 'Finder.app'"
                   }
                 ],
@@ -748,6 +2028,174 @@
                 "type": "basic",
                 "from": {
                   "key_code": "semicolon",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_w",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -g raycast://extensions/raycast/window-management/previous-display"
+                  }
+                ],
+                "description": "Window: previous-display",
+                "type": "basic",
+                "from": {
+                  "key_code": "y",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_w",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -g raycast://extensions/raycast/window-management/next-display"
+                  }
+                ],
+                "description": "Window: next-display",
+                "type": "basic",
+                "from": {
+                  "key_code": "o",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_w",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -g raycast://extensions/raycast/window-management/top-half"
+                  }
+                ],
+                "description": "Window: top-half",
+                "type": "basic",
+                "from": {
+                  "key_code": "k",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_w",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -g raycast://extensions/raycast/window-management/bottom-half"
+                  }
+                ],
+                "description": "Window: bottom-half",
+                "type": "basic",
+                "from": {
+                  "key_code": "j",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_w",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -g raycast://extensions/raycast/window-management/left-half"
+                  }
+                ],
+                "description": "Window: left-half",
+                "type": "basic",
+                "from": {
+                  "key_code": "h",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_w",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -g raycast://extensions/raycast/window-management/right-half"
+                  }
+                ],
+                "description": "Window: right-half",
+                "type": "basic",
+                "from": {
+                  "key_code": "l",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_w",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -g raycast://extensions/raycast/window-management/maximize"
+                  }
+                ],
+                "description": "Window: maximize",
+                "type": "basic",
+                "from": {
+                  "key_code": "f",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -1815,6 +3263,54 @@
                 "type": "basic",
                 "from": {
                   "key_code": "v",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open raycast://ai-commands/fix-spelling-and-grammar"
+                  }
+                ],
+                "description": "Open raycast://ai-commands/fix-spelling-and-grammar",
+                "type": "basic",
+                "from": {
+                  "key_code": "s",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open raycast://extensions/raycast/raycast-notes/raycast-notes"
+                  }
+                ],
+                "description": "Open raycast://extensions/raycast/raycast-notes/raycast-notes",
+                "type": "basic",
+                "from": {
+                  "key_code": "n",
                   "modifiers": {
                     "optional": [
                       "any"
