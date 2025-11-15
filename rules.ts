@@ -1581,6 +1581,8 @@ fs.writeFileSync(
       profiles: [
         {
           name: "Default",
+          selected: true,
+          virtual_hid_keyboard: { keyboard_type_v2: "ansi" },
           complex_modifications: {
             rules,
           },
