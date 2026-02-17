@@ -1587,6 +1587,14 @@ fs.writeFileSync(
             rules,
           },
         },
+        {
+          name: "Gaming",
+          selected: false,
+          virtual_hid_keyboard: { keyboard_type_v2: "ansi" },
+          complex_modifications: {
+            rules: [],
+          },
+        },
       ],
     },
     null,
