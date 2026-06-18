@@ -1282,11 +1282,10 @@ const rules: KarabinerRules[] = [
       {
         to: [
           {
-            shell_command:
-              "open raycast://extensions/raycast/raycast-ai/ai-chat",
+            shell_command: "open raycast-x://extensions/raycast/ai/ai-chat",
           },
         ],
-        description: "Open raycast://extensions/raycast/raycast-ai/ai-chat",
+        description: "Open raycast-x://extensions/raycast/ai/ai-chat",
         type: "basic",
         from: {
           key_code: "a",
@@ -1332,7 +1331,7 @@ const rules: KarabinerRules[] = [
       p: app("Spotify"),
       // "W"hatsApp has been replaced by Texts
       l: open(
-        "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
+        "raycast-x://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
       ),
     },
 
@@ -1416,7 +1415,7 @@ const rules: KarabinerRules[] = [
       // "F"inder
       // f: app("Finder"),
       // Search Finder
-      f: open("raycast://extensions/raycast/file-search/search-files"),
+      f: open("raycast-x://extensions/raycast/file-search/search-files"),
       u: {
         to: [
           {
@@ -1478,7 +1477,7 @@ const rules: KarabinerRules[] = [
         ],
       },
       // "D"o not disturb toggle
-      d: open(`raycast://extensions/yakitrak/do-not-disturb/toggle`),
+      d: open(`raycast-x://extensions/yakitrak/do-not-disturb/toggle`),
     },
 
     // v = "moVe" which isn't "m" because we want it to be on the left hand
@@ -1530,19 +1529,19 @@ const rules: KarabinerRules[] = [
     // r = "Raycast"
     r: {
       // "D"do not disturb toggle
-      d: open("raycast://extensions/yakitrak/do-not-disturb/toggle"),
+      d: open("raycast-x://extensions/yakitrak/do-not-disturb/toggle"),
       // "V"isual Studio Code
-      v: open("raycast://extensions/thomas/visual-studio-code/index"),
+      v: open("raycast-x://extensions/thomas/visual-studio-code/index"),
       // "S"pelling
-      s: open("raycast://ai-commands/fix-spelling-and-grammar"),
+      s: open("raycast-x://ai-commands/fix-spelling-and-grammar"),
 
       1: open(
-        "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"
+        "raycast-x://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"
       ),
       2: open(
-        "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2"
+        "raycast-x://extensions/VladCuciureanu/toothpick/connect-favorite-device-2"
       ),
-      n: open("raycast://extensions/raycast/raycast-notes/raycast-notes"),
+      n: open("raycast-x://extensions/raycast/raycast-notes/raycast-notes"),
     },
   }),
   {
