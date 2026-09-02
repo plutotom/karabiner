@@ -5,6 +5,10 @@
   "profiles": [
     {
       "name": "Default",
+      "selected": true,
+      "virtual_hid_keyboard": {
+        "keyboard_type_v2": "ansi"
+      },
       "complex_modifications": {
         "rules": [
           {
@@ -1376,10 +1380,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/raycast/raycast-ai/ai-chat"
+                    "shell_command": "open raycast-x://extensions/raycast/ai/ai-chat"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/raycast-ai/ai-chat",
+                "description": "Open raycast-x://extensions/raycast/ai/ai-chat",
                 "type": "basic",
                 "from": {
                   "key_code": "a",
@@ -1924,10 +1928,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
+                    "shell_command": "open raycast-x://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
                   }
                 ],
-                "description": "Open raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink",
+                "description": "Open raycast-x://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink",
                 "type": "basic",
                 "from": {
                   "key_code": "l",
@@ -2448,10 +2452,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/raycast/file-search/search-files"
+                    "shell_command": "open raycast-x://extensions/raycast/file-search/search-files"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/file-search/search-files",
+                "description": "Open raycast-x://extensions/raycast/file-search/search-files",
                 "type": "basic",
                 "from": {
                   "key_code": "f",
@@ -2664,10 +2668,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/yakitrak/do-not-disturb/toggle"
+                    "shell_command": "open raycast-x://extensions/yakitrak/do-not-disturb/toggle"
                   }
                 ],
-                "description": "Open raycast://extensions/yakitrak/do-not-disturb/toggle",
+                "description": "Open raycast-x://extensions/yakitrak/do-not-disturb/toggle",
                 "type": "basic",
                 "from": {
                   "key_code": "d",
@@ -3184,10 +3188,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"
+                    "shell_command": "open raycast-x://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"
                   }
                 ],
-                "description": "Open raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1",
+                "description": "Open raycast-x://extensions/VladCuciureanu/toothpick/connect-favorite-device-1",
                 "type": "basic",
                 "from": {
                   "key_code": "1",
@@ -3208,10 +3212,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2"
+                    "shell_command": "open raycast-x://extensions/VladCuciureanu/toothpick/connect-favorite-device-2"
                   }
                 ],
-                "description": "Open raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2",
+                "description": "Open raycast-x://extensions/VladCuciureanu/toothpick/connect-favorite-device-2",
                 "type": "basic",
                 "from": {
                   "key_code": "2",
@@ -3232,10 +3236,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/yakitrak/do-not-disturb/toggle"
+                    "shell_command": "open raycast-x://extensions/yakitrak/do-not-disturb/toggle"
                   }
                 ],
-                "description": "Open raycast://extensions/yakitrak/do-not-disturb/toggle",
+                "description": "Open raycast-x://extensions/yakitrak/do-not-disturb/toggle",
                 "type": "basic",
                 "from": {
                   "key_code": "d",
@@ -3256,10 +3260,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/thomas/visual-studio-code/index"
+                    "shell_command": "open raycast-x://extensions/thomas/visual-studio-code/index"
                   }
                 ],
-                "description": "Open raycast://extensions/thomas/visual-studio-code/index",
+                "description": "Open raycast-x://extensions/thomas/visual-studio-code/index",
                 "type": "basic",
                 "from": {
                   "key_code": "v",
@@ -3280,10 +3284,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://ai-commands/fix-spelling-and-grammar"
+                    "shell_command": "open raycast-x://ai-commands/fix-spelling-and-grammar"
                   }
                 ],
-                "description": "Open raycast://ai-commands/fix-spelling-and-grammar",
+                "description": "Open raycast-x://ai-commands/fix-spelling-and-grammar",
                 "type": "basic",
                 "from": {
                   "key_code": "s",
@@ -3304,10 +3308,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/raycast/raycast-notes/raycast-notes"
+                    "shell_command": "open raycast-x://extensions/raycast/raycast-notes/raycast-notes"
                   }
                 ],
-                "description": "Open raycast://extensions/raycast/raycast-notes/raycast-notes",
+                "description": "Open raycast-x://extensions/raycast/raycast-notes/raycast-notes",
                 "type": "basic",
                 "from": {
                   "key_code": "n",
@@ -3352,6 +3356,16 @@
             ]
           }
         ]
+      }
+    },
+    {
+      "name": "Gaming",
+      "selected": false,
+      "virtual_hid_keyboard": {
+        "keyboard_type_v2": "ansi"
+      },
+      "complex_modifications": {
+        "rules": []
       }
     }
   ]
